@@ -1,6 +1,6 @@
 async function generateLetter() {
     try {
-        const response = await fetch("https://miniloveyou.onrender.com", { 
+        const response = await fetch("http://localhost:3000/generate", { 
             method: "POST",
             headers: { "Content-Type": "application/json" }
         });
