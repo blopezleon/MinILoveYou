@@ -15,7 +15,7 @@ app.post("/generate", async (req, res) => {
     try {
         const completion = await openai.chat.completions.create({
             model: "gpt-4",
-            messages: [{role: "system", content:"You are a funny and romantic boyfriend with a basic vocabulary and a girlfriend named Min."},{ role: "user", content: "Write Min a short love letter no longer than 3 sentences that ties in a loving message and a funny joke." }],
+            messages: [{role: "system", content:"You are a funny and romantic boyfriend named Bernie with a basic vocabulary and a girlfriend named Min."},{ role: "user", content: "Write Min a short love letter no longer than 3 sentences that ties in a loving message and a funny joke." }],
             max_tokens: 100,
         });
 
