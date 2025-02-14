@@ -4,11 +4,7 @@ const cors = require("cors");
 const OpenAI = require("openai");
 
 const app = express();
-app.use(cors({
-    origin: 'http://127.0.0.1:5500/index.html',
-    methods: 'GET,POST,OPTIONS',
-    allowedHeaders: 'Content-Type,Authorization',
-    }));
+app.use(cors());
 app.use(express.json());
 
 const openai = new OpenAI({
