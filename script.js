@@ -1,6 +1,6 @@
 async function generateLetter() {
     try {
-        const response = await fetch("http://localhost:3000/generate", { 
+        const response = await fetch("https://render.com/docs/web-services#port-binding", { 
             method: "POST",
             headers: { "Content-Type": "application/json" }
         });
