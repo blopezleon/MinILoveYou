@@ -1,4 +1,7 @@
 async function generateLetter() {
+    const letterElement = document.getElementById("letter");
+    letterElement.innerText = "Generating... 💌";
+    
     try {
         const response = await fetch("https://miniloveyou.onrender.com/generate", { 
             method: "POST",

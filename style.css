@@ -1,27 +1,38 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: #ea72ca;
+    background-image:url(hearts-background.jpg);
+    background-size: cover;
     text-align: center;
-    background-color: #ffe6f2;
-    padding: 20px;
+    font-family: 'Arial', sans-serif;
 }
+
 .container {
-    max-width: 400px;
-    margin: auto;
-    background: white;
+    margin-top: 50px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 192, 203, 0.8);
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 0, 76, 0.5);
 }
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 15px;
+}
+
 button {
-    background-color: #ff4081;
-    color: white;
-    border: none;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 5px;
+    color: white;
+    background-color: #ff4d6d;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    margin-top: 10px;
 }
+
 button:hover {
-    background-color: #e91e63;
+    background-color: #ff1f50;
 }
